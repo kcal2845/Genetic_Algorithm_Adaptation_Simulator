@@ -143,10 +143,7 @@ class main(util):
 
         # 배경원 초기화
         
-        for i in range(0,len(self.position)):
-                x = self.position[i][0]
-                y = self.position[i][1]
-                self.field.create_oval(x,y,x+50,y+50,fill=self.bg, outline=self.bg)
+        self.field.delete("all")
                 
         # 무작위 위치로 개체 그리기
         randpos = self.position
